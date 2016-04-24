@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"image"
 	"image/color"
+	"log"
 
 	"github.com/mewkiz/pkg/imgutil"
 	"github.com/mewspring/blend"
@@ -15,6 +16,7 @@ import (
 // storeModelThumbnail extracts the embedded thumbnail of the given Blender
 // model.
 func storeModelThumbnail(path string, model *blend.Blend) error {
+	log.Printf("Creating thumbnail %q", path)
 	body, err := getBlockBody(model, block.CodeTEST)
 	if err != nil {
 		return err
