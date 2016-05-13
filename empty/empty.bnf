@@ -1,0 +1,13 @@
+Start
+	: Foo Bar
+;
+
+Foo
+	: empty  << "no foo", nil >>
+	| "foo"  << "foo", nil >>
+;
+
+Bar
+	: empty << "no bar", nil >>
+	| "bar" << "bar", nil >>
+;

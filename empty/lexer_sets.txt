@@ -1,0 +1,57 @@
+Item sets:
+S0{
+	foo : • 'f' 'o' 'o'
+	bar : • 'b' 'a' 'r'
+}
+Transitions:
+	['b','b'] -> S1
+	['f','f'] -> S2
+Action: nil
+Symbols classes: {['b','b'], ['f','f']}
+
+S1{
+	bar : 'b' • 'a' 'r'
+}
+Transitions:
+	['a','a'] -> S3
+Action: nil
+Symbols classes: {['a','a']}
+
+S2{
+	foo : 'f' • 'o' 'o'
+}
+Transitions:
+	['o','o'] -> S4
+Action: nil
+Symbols classes: {['o','o']}
+
+S3{
+	bar : 'b' 'a' • 'r'
+}
+Transitions:
+	['r','r'] -> S5
+Action: nil
+Symbols classes: {['r','r']}
+
+S4{
+	foo : 'f' 'o' • 'o'
+}
+Transitions:
+	['o','o'] -> S6
+Action: nil
+Symbols classes: {['o','o']}
+
+S5{
+	bar : 'b' 'a' 'r' •
+}
+Transitions:
+Action: Accept("bar")
+Symbols classes: {}
+
+S6{
+	foo : 'f' 'o' 'o' •
+}
+Transitions:
+Action: Accept("foo")
+Symbols classes: {}
+

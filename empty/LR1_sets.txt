@@ -1,0 +1,49 @@
+S0{
+	S' : •Start «$»
+	Start : •Foo Bar «$»
+	Foo : empty• «bar»
+	Foo : empty• «$»
+	Foo : •foo «bar»
+	Foo : •foo «$»
+}
+Transitions:
+	Foo -> 2
+	foo -> 3
+	Start -> 1
+
+
+S1{
+	S' : Start• «$»
+}
+Transitions:
+
+
+S2{
+	Start : Foo •Bar «$»
+	Bar : empty• «$»
+	Bar : •bar «$»
+}
+Transitions:
+	Bar -> 4
+	bar -> 5
+
+
+S3{
+	Foo : foo• «bar»
+	Foo : foo• «$»
+}
+Transitions:
+
+
+S4{
+	Start : Foo Bar• «$»
+}
+Transitions:
+
+
+S5{
+	Bar : bar• «$»
+}
+Transitions:
+
+

@@ -1,0 +1,5 @@
+INVALID
+$
+empty
+foo
+bar
