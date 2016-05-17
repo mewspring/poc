@@ -3,8 +3,8 @@ Foo: {
 	foo
 }
 Bar: {
-	bar
 	empty
+	bar
 }
 Start: {
 	empty
@@ -12,7 +12,7 @@ Start: {
 	bar
 }
 S': {
-	empty
 	foo
 	bar
+	empty
 }

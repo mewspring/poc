@@ -3,13 +3,13 @@ S0{
 	Start : •Foo Bar «$»
 	Foo : empty• «bar»
 	Foo : empty• «$»
-	Foo : •foo «bar»
 	Foo : •foo «$»
+	Foo : •foo «bar»
 }
 Transitions:
+	foo -> 3
 	Start -> 1
 	Foo -> 2
-	foo -> 3
 
 
 S1{
@@ -29,8 +29,8 @@ Transitions:
 
 
 S3{
-	Foo : foo• «bar»
 	Foo : foo• «$»
+	Foo : foo• «bar»
 }
 Transitions:
 
