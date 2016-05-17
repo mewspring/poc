@@ -3,16 +3,16 @@ Foo: {
 	foo
 }
 Bar: {
-	empty
 	bar
+	empty
 }
 Start: {
+	bar
 	empty
 	foo
-	bar
 }
 S': {
+	empty
 	foo
 	bar
-	empty
 }
