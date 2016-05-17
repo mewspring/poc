@@ -45,7 +45,7 @@ var productionsTable = ProdTab{
 		Index:      2,
 		NumSymbols: 0,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return nil, nil
+			return "no foo", nil
 		},
 	},
 	ProdTabEntry{
@@ -65,7 +65,7 @@ var productionsTable = ProdTab{
 		Index:      4,
 		NumSymbols: 0,
 		ReduceFunc: func(X []Attrib) (Attrib, error) {
-			return nil, nil
+			return "no bar", nil
 		},
 	},
 	ProdTabEntry{

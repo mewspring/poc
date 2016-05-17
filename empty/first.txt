@@ -1,18 +1,18 @@
-S': {
-	bar
-	foo
-	empty
-}
 Foo: {
 	empty
 	foo
 }
 Bar: {
-	empty
 	bar
+	empty
 }
 Start: {
-	foo
 	empty
+	foo
+	bar
+}
+S': {
+	empty
+	foo
 	bar
 }
